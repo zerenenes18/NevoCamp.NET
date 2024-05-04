@@ -63,7 +63,7 @@ var product = new Product { CategoryId = 2,ProductId = 4,ProductName = "Computer
 productManager.AddProduct(product);
 
 
-GetByid(5)
+
  var result = productManager.Get(p => p.ProductName == "Computer");
 
 Console.WriteLine($" ürün ismi: {result.ProductName}, fiyat: {result.UnitPrice}");
