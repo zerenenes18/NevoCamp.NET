@@ -3,8 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.IO.Pipes;
-
-
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -90,6 +89,29 @@ namespace DataAccess
          
         }
 
+        public List<Product> GetAll()
+        {
+            throw new NotImplementedException();
+        }
 
+        public Product Get(Expression<Func<Product, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateProduct(Product entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteProduct(Product entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Product> GetAll(Expression<Func<Product, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
